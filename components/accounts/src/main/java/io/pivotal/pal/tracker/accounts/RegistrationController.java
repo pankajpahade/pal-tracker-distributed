@@ -16,6 +16,7 @@ public class RegistrationController {
 
     @PostMapping("/registration")
     public UserInfo create(@RequestBody RegistrationForm form) {
+        System.out.println("Hellooooooooooooooooooooo");
         UserRecord record = service.createUserWithAccount(form.name);
         return new UserInfo(record.id, record.name, "registration info");
     }
