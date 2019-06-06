@@ -39,7 +39,7 @@ public class AllocationController {
     }
 
     @GetMapping
-    public List<AllocationInfo> list(@RequestParam long projectId) {
+    public List<AllocationInfo> list(@PathVariable long projectId) {
         return gateway.findAllByProjectId(projectId)
             .stream()
             .map(this::present)
