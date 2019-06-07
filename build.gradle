@@ -44,7 +44,6 @@ subprojects {
     }
 
     dependencies {
-        compile "org.springframework.cloud:spring-cloud-commons:$springCloudCommonsVersion"
         compile "com.fasterxml.jackson.core:jackson-core:$jacksonVersion"
         compile "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
         compile "com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion"
