@@ -7,7 +7,7 @@ applications:
     instances: 1
     env:
       MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: '*'
-      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 1.8.+ } }'
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 8.+ } }'
       GRANT_TYPE: client_credentials
     services:
       - tracker-timesheets-database
