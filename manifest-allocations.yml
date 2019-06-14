@@ -3,7 +3,7 @@ applications:
     path: ./applications/allocations-server/build/libs/allocations-server.jar
     routes:
       - route: allocations-pal-PK.apps.pcf.paltraining.perficient.com
-    memory: 750M
+    memory: 850M
     instances: 1
     env:
       MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: "*"
