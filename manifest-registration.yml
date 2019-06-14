@@ -3,12 +3,14 @@ applications:
     path: ./applications/registration-server/build/libs/registration-server.jar
     routes:
       - route: registration-pal-PK.apps.pcf.paltraining.perficient.com
-    memory: 1G
+    memory: 500M
     instances: 1
     env:
+      MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: *
       JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 1.8.+ } }'
       GRANT_TYPE: client_credentials
     services:
       - tracker-registration-database
       - tracker-service-registry
       - tracker-sso
+      - tracker-config-server

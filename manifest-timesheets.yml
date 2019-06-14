@@ -3,9 +3,10 @@ applications:
     path: ./applications/timesheets-server/build/libs/timesheets-server.jar
     routes:
       - route: timesheets-pal-PK.apps.pcf.paltraining.perficient.com
-    memory: 1G
+    memory: 500M
     instances: 1
     env:
+      MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: *
       JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 1.8.+ } }'
       GRANT_TYPE: client_credentials
     services:
@@ -13,3 +14,4 @@ applications:
       - tracker-service-registry
       - tracker-circuit-breaker-dashboard
       - tracker-sso
+      - tracker-config-server
