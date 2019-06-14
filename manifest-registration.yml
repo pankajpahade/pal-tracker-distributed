@@ -3,7 +3,7 @@ applications:
     path: ./applications/registration-server/build/libs/registration-server.jar
     routes:
       - route: registration-pal-PK.apps.pcf.paltraining.perficient.com
-    memory: 850M
+    memory: 1G
     instances: 1
     env:
       MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: "*"
