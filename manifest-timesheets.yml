@@ -12,6 +12,5 @@ applications:
     services:
       - tracker-timesheets-database
       - tracker-service-registry
-      - tracker-circuit-breaker-dashboard
       - tracker-sso
       - tracker-config-server
